@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D6936</color>
+    <color name="colorPrimaryDark">#2C402B</color>
+    <color name="colorAccent">#1D6936</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteOpacity">#95FFFFFF</color>
+    <color name="cinza_claro">#C8C8C8</color>
+    <color name="cinza">#A5A5A5</color>
+    <color name="cinza_escuro">#7A7A7A</color>
+    <color name="black">#000000</color>
+    <color name="cinza_gradient"/>
+    <color name="transparent">#00000000</color>
+    <!-- Dialog  -->
+    <color name="dialog_success">#28A745</color>
+    <color name="dialog_error">#DC3545</color>
+    <color name="dialog_warning">#FFC107</color>
+    <color name="dialog_info">#17A2B8</color>
+    <!-- Checked  -->
+    <color name="checked_green">#28A745</color>
+    <color name="checked_light_green">#77CF8A</color>
+</resources>

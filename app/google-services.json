@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603694423454",
+    "firebase_url": "https://banco-jrmadeiras-mobile.firebaseio.com",
+    "project_id": "banco-jrmadeiras-mobile",
+    "storage_bucket": "banco-jrmadeiras-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603694423454:android:41066a68adef351443ca8f",
+        "android_client_info": {
+          "package_name": "com.rp_grf.jrmadeiras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603694423454-m2qu4u8tggnph79p42jlmrma1b40ki7b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rp_grf.jrmadeiras",
+            "certificate_hash": "2430c7e073c83d6b9e8b7678b63890410ef39f8d"
+          }
+        },
+        {
+          "client_id": "603694423454-m52n8ff1i1vudd4oufs23usfa2flfe4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcvb94lCT96AHvioqKQGVaLZY-MF45dHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603694423454-m52n8ff1i1vudd4oufs23usfa2flfe4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

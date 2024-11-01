@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".Telas.Programas.MOB009_B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="bottom"
+                android:text="Documento"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h5"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/screen_mob009_b_num_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:text="Número Documento"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h4" />
+
+
+                <TextView
+                    android:id="@+id/screen_mob009_b_val_tot_nf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Valor"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h4"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="bottom"
+                android:text="Cliente"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h5"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/screen_mob009_b_cod_cli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="38"
+                    android:singleLine="true"
+                    android:text="Código"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="49"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h4" />
+
+                <TextView
+                    android:id="@+id/screen_mob009_b_nom_cli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="13"
+                    android:singleLine="true"
+                    android:text="Nome Cliente"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h4" />
+
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:overScrollMode="never"
+                android:requiresFadingEdge="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Data"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_dat_registro"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00/00/0000"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Tipo de Voo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_nom_tip_voo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="Nome Tipo de Voo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Origem"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="Destino"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="15">
+
+                            <TextView
+                                android:id="@+id/txt_registro_cod_aer_ori"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="Sigla de Origem"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_cod_aer_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="4"
+                                android:gravity="right"
+                                android:text="Sigla de Destino"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Partida"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_par"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Decolagem"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_dec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Pouso"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_pou"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Corte"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_cor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Tempo de vôo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_voo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_titulo_cinza"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apontamento FLIGHT"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h4"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Horim. Inicial"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_ini_fli"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Horim. Final"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_fin_fli"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Temp de vôo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_tmp_voo_fli"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Pousos"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_num_pou"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_titulo_cinza"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Combustivel"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h4"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Litros"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_lit_com"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Galão"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_gal_com"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_titulo_cinza"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apontamento HOBBS"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h4"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Horim. inicial"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_ini_hob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Horim. final"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_fin_hob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Tempo de vôo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_tmp_voo_hob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Diurno"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_diu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Noturno"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_not"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="IFRR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_ifrr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="IFRC"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_ifrc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="VFR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_hor_vfr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="00 : 00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Diário de bordo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_inf_dia_bor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Sobre vôo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_sob_voo_mn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Navegação ?"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_flg_nav"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="Não"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/cinza_claro" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Modalidade"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_dry_wet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text="WET"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/txt_registro_connected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/txt_registro_contador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:text=""
+                                android:visibility="invisible"
+                                android:textSize="@dimen/h5" />
+
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_titulo_cinza"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Observações"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h4"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp">
+
+                            <TextView
+                                android:id="@+id/txt_registro_obs_reg_voo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:gravity="left"
+                                android:text="Texto das observações"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/h5" />
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <Button
+                            android:id="@+id/button_confirmar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Confirmar"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RP JR</string>
+
+    <string name="app_version">1.0.11</string>
+
+    <string name="access_token">sk.eyJ1IjoicnBzeXN0ZW0iLCJhIjoiY2trZm16MTB1MWNzajJub2N3bXBuMHEyNiJ9.eRMoAy8cO31A9A0nS5c8TQ</string>
+    <string name="chave_google_directions_api">AIzaSyBTgIvr11M_Q52O1uYxMFjL5VJ9JxQpmXs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
